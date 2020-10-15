@@ -6,11 +6,9 @@ let obj = {
 let str = "fruit";
 
 function check(string, object){
-    if(string in object){
-        console.log("true");
-    }else{
-        console.log("false");
-    }
+    console.log(string in object);
 }
 
 check(str, obj)
+
+// Всё решено верно. Выше показала, как можно упростить код и записать то же самое короче :)
