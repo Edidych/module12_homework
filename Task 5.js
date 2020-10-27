@@ -23,9 +23,8 @@ class Laptop extends Station{
         super(name);
         this.amperage = amperage;
         this.voltage = voltage;
-
+        this.volume = "1000 ГБ";
     }
-    volume = "1000 ГБ"
 }
 
 
@@ -52,3 +51,5 @@ freezer.powerConsumption()
 comp.turnOff()
 comp.powerConsumption()
 console.log(comp.volume)
+
+// Есть небольшой недочет: не забывайте присваивать свойства именно к this, чтобы свойство относились к экземпляру класса, а не к самому классу в целом. Выше поправила
